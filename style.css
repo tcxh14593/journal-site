@@ -1,0 +1,15 @@
+:root { --bg: #F4EFE8; --surface: #FFFFFF; --line: #E6DDD2; --text: #2F2A26; --text2: #4A403A; --muted: #7A6F66; --accent: #5E6F58; }
+@media (prefers-color-scheme: dark) { :root { --bg: #1B1A1D; --surface: #242227; --line: #36333A; --text: #EDE6DE; --text2: #D9D1C8; --muted: #A79D93; --accent: #B7C7AF; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 Manrope, system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+header img { width: 52px; height: 52px; border-radius: 50%; }
+h1 { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1; margin: 0; }
+h2 { font-size: 17px; margin: 32px 0 6px; }
+p, li { color: var(--text2); }
+ul { padding-left: 20px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 20px 22px; margin: 20px 0; }
+.muted { color: var(--muted); font-size: 14px; }
+a { color: var(--accent); }
+nav { display: flex; gap: 18px; margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 14px; }
